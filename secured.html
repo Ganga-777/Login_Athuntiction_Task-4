@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secured Page</title>
+</head>
+<body>
+    <h2>Secured Page</h2>
+    <p>Welcome to the secured page, <span id="username"></span>!</p>
+
+    <script>
+        // Retrieve the username from local storage
+        const username = localStorage.getItem('username');
+        document.getElementById('username').innerText = username;
+    </script>
+</body>
+</html>
